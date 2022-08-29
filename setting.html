@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Chats-Kokoa Clone</title>
+    <title>Settings-Kokoa Clone</title>
 </head>
 <body>
     <div class="status-bar">
@@ -23,33 +23,44 @@
         </div>
     </div>
     
-    <header class="screen-header">
-        <h1 class="screen-header__title">Chats</h1>
-        <div class="screen-header__icons">
-            <span><i class="fa-solid fa-magnifying-glass fa-lg"></i></span>
-            <span><i class="fa-solid fa-comments fa-lg"></i></span>
-            <span><i class="fa-solid fa-music fa-lg"></i></span>
-            <span><i class="fa-solid fa-gear fa-lg"></i></span>
+    <header class="alt-header">
+        <div class="alt-header__column">
+        <a href="more.html">
+        <i class="fa-solid fa-angle-left fa-2x"></i>
+        </a>
+    </div>
+        <div class="alt-header__column">
+            <h1 class="alt-header__title">Settings</h1>
+        </div>
+        <div class="alt-header__column">
+            <i class="fa-solid fa-magnifying-glass fa-2x"></i>
         </div>
     </header>
 
     <main class="main-screen">
-        <a href="chat.html">
-     <div class="user-component">
-         <div class="user-component__column">
-             <img src="https://lh3.googleusercontent.com/ogw/AOh-ky07kNQZ8T80WWV_NLc-ay1o27z4J04_4mDo168sGQ=s64-c-mo"
-                class="user-component__avatar"/>
-     <div class="user-component__text">
-        <h4 class="user-component__title">Suah</h4>
-        <h6 class="user-component__subtitle">Hi There!</h6>
-     </div>
-    </div>
-        <div class="user-component__column">
-        <span class="user-component__time">11:11</span>
-        <div class="badge">1</div>
-    </div>
-    </div>
-</a>
+        <ul class="settings-list">
+            <li class="settings__setting">
+                <div class="settings__setting-column">
+                <i class="fa-solid fa-bullhorn"></i>
+                <span>Notices</span>
+                <div class="settings__setting-column"></div>
+            </div>
+            </li>
+            <li class="settings__setting">
+                <div class="settings__setting-column">
+                <i class="fa-solid fa-flask"></i>
+                <span>KoKoa Lab</span>
+                <div class="settings__setting-column"></div>
+            </div>
+            </li>
+            <li class="settings__setting">
+                <div class="settings__setting-column">
+                <i class="fa-solid fa-code-branch"></i>
+                <span>Version</span>
+                </div>
+                <div class="settings__setting-column"><span>Latest Version</span></div>
+            </li>
+        </ul>
     </main>
 
     <nav class="nav">
@@ -60,7 +71,7 @@
             <li class="nav__btn">
                 <a class="nav__link" href="chats.html">
                     <span class="nav__notification badge">1</span>
-                    <i class="fa-solid fa-comment fa-2x"></i>
+                    <i class="far fa-comment fa-2x"></i>
             <li class="nav__btn">
                 <a class="nav__link" href="find.html"><i class="fa-solid fa-magnifying-glass fa-2x"></i></a></li>
             <li class="nav__btn">
